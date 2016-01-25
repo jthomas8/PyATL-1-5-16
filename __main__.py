@@ -4,21 +4,21 @@ import numpy as np
 from scipy import stats
 import csv
 
-class hand:
-
-    def __init__(self):
-        self.current_hand = np.zeros(shape=(13,4), dtype=int)
-
-    def add_card(card):
-        self.current_hand += get_card_val(card)
-        self.values = self.current_hand.sum(axis=0)
-        self.suits = self.current_hand.sum(axis=1)
-        self.hand_size += 1
-
-    def set_value():
-        if(hand_size.__len__() < 5):
-            print('Incomplete hand')
-        self.handval = hand_value(self.values, self.suits)
+#class hand:
+#
+#    def __init__(self):
+#        self.current_hand = np.zeros(shape=(13,4), dtype=int)
+#
+#    def add_card(card):
+#        self.current_hand += get_card_val(card)
+#        self.values = self.current_hand.sum(axis=0)
+#        self.suits = self.current_hand.sum(axis=1)
+#        self.hand_size += 1
+#
+#    def set_value():
+#        if(hand_size.__len__() < 5):
+#            print('Incomplete hand')
+#        self.handval = hand_value(self.values, self.suits)
 
 
 def hand_value(values, suits):
