@@ -4,23 +4,6 @@ import numpy as np
 from scipy import stats
 import csv
 
-#class hand:
-#
-#    def __init__(self):
-#        self.current_hand = np.zeros(shape=(13,4), dtype=int)
-#
-#    def add_card(card):
-#        self.current_hand += get_card_val(card)
-#        self.values = self.current_hand.sum(axis=0)
-#        self.suits = self.current_hand.sum(axis=1)
-#        self.hand_size += 1
-#
-#    def set_value():
-#        if(hand_size.__len__() < 5):
-#            print('Incomplete hand')
-#        self.handval = hand_value(self.values, self.suits)
-
-
 def hand_value(values, suits):
     if(values.max() == 4):
         return 19, '4 of a kind'
@@ -109,8 +92,7 @@ for i in np.arange(bhlist.__len__()):
         white_temp += get_card_val(white_card)
     bhands[:,:,i],whands[:,:,i] = black_temp, white_temp
 
-compare_hand(bhands[:,:,0], whands[:,:,0])
-
+compare_hand(bhands[:,:,2], whands[:,:,2])
 #print(bhands[:,:,0])
 #print(bhlist)
 #print(whlist)
